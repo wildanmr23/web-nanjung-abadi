@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile - Fashion Mukena</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.jpg" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home" style="padding-left: 15px"
+          >نانجونج آبادي</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features/product-list.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features/cooperation.html"
+                >Kerja Sama</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features/about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features/contact.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features/faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="header-image">
+        <img src="assets/header-image.jpg" alt="Header Image" />
+      </div>
+      <div class="product-list">
+        <div class="product">
+          <div class="image-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK LIST -->
+    <section id="product-list">
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
+          <!-- Produk 1 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lvbemvcwhx3m0c"
+                class="card-img-top"
+                alt="Produk 1"
+                onclick="FirstProduct()"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mukena Anak Perempuan Resleting 6 - 12 tahun Katun Mikro Motif
+                  Bunga Lucu
+                </h5>
+                <div class="rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <a
+                  href="https://shopee.co.id/NANJUNG-ABADI-Mukena-Anak-Perempuan-Resleting-6-12thn-Katun-Mikro-Motif-Bunga-Lucu-i.255690067.24080736509?sp_atk=638cbe70-0288-4846-ab59-a7eb4e024998&xptdk=638cbe70-0288-4846-ab59-a7eb4e024998"
+                  class="animated-button-product"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Produk 2 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lv71gte64uv1af"
+                class="card-img-top"
+                alt="Produk 2"
+                onclick="SecondProduct()"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mukena Traveling Dewasa 2 in 1 Resleting Katun Mikro Polos
+                </h5>
+                <div class="rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star-half-alt"></i>
+                </div>
+                <a
+                  href="https://shopee.co.id/NANJUNG-ABADI-Mukena-Traveling-Dewasa-2in1-Resleting-Katun-Mikro-Polos-i.255690067.25530080276?sp_atk=75481115-741b-4c22-9fae-a4e6d4e6a72c&xptdk=75481115-741b-4c22-9fae-a4e6d4e6a72c"
+                  class="animated-button-product"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Produk 3 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r98p-lwpekg8zkwe55e"
+                class="card-img-top"
+                alt="Produk 3"
+                onclick="ThirdProduct()"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mukena Couple Resleting Ibu dan Anak Motif Etnic Series
+                  Terbaru
+                </h5>
+                <div class="rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <a
+                  href="https://shopee.co.id/NANJUNG-ABADI-Mukena-Couple-Resleting-Ibu-dan-Anak-Motif-Etnic-Series-i.255690067.24632421535?sp_atk=ef997803-98ea-4c93-b656-b007dbc023a1&xptdk=ef997803-98ea-4c93-b656-b007dbc023a1"
+                  class="animated-button-product"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Produk 4 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lvcpquwf0za75a"
+                class="card-img-top"
+                alt="Produk 4"
+                onclick="ForthProduct()"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mukena Traveling Couple Ibu dan Anak 2 in 1 Resleting Katun
+                  Mikro Motif Premium
+                </h5>
+                <div class="rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <a
+                  href="https://shopee.co.id/NANJUNG-ABADI-Mukena-Traveling-Couple-Ibu-dan-Anak-2-in-1-Resleting-Katun-Mikro-Motif-Premium-i.255690067.27400075889?xptdk=170803c2-f231-44cf-b7c2-9ed60eaf18e2"
+                  class="animated-button-product"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center-item">
+          <a
+            style="margin-top: 10px; align-items: end"
+            href="features/product-list.html"
+            class="animated-button"
+            >Lihat Selengkapnya</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Baru dan Unggulan -->
+    <section id="featured-latest-products">
+      <h2><b>PRODUK BEST SELLER DAN KELUARAN TERBARU</b></h2>
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-10 row-cols-sm-2 g-4">
+          <!-- Produk 1 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lvbemvcwhx3m0c"
+                class="card-img-top"
+                alt="Produk 1"
+                onclick="FirstNewProduct()"
+              />
+            </div>
+          </div>
+          <!-- Produk 2 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lz7766l4jvuwb8"
+                class="card-img-top"
+                alt="Produk 2"
+                onclick="SecondNewProduct()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="testimonials" data-aos="fade-up">
+      <h2><b>TESTIMONI DARI KLIEN</b></h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>
+            "Saya sangat terkesan dengan kualitas produk dari UMKM ini. Meskipun
+            harganya terjangkau, hasilnya tidak kalah dengan produk-produk mahal
+            di pasaran. Selain itu, pelayanan yang diberikan sangat ramah dan
+            cepat tanggap. Sangat direkomendasikan!"
+          </p>
+          <div class="client-info">
+            <img src="assets/person.jpg" alt="Client Photo" />
+            <p>Saiful Rijal, CEO of ever.team</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Produk dari UMKM ini benar-benar luar biasa! Bahan-bahannya terasa
+            berkualitas dan sangat nyaman digunakan. Saya juga suka dengan
+            desainnya yang unik dan tidak pasaran. Pastinya saya akan kembali
+            untuk belanja lagi."
+          </p>
+          <div class="client-info">
+            <img src="assets/person.jpg" alt="Client Photo" />
+            <p>Saiful Rijal, CEO of ever.team</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Saya sudah mencoba banyak produk sejenis, tapi produk dari UMKM ini
+            yang paling memuaskan. Hasilnya sesuai dengan apa yang dijanjikan,
+            bahkan lebih baik dari ekspektasi saya. Terima kasih telah
+            menghadirkan produk yang berkualitas!"
+          </p>
+          <div class="client-info">
+            <img src="assets/person.jpg" alt="Client Photo" />
+            <p>Daffa Toldo, Marketing of Surya 16</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-icons">
+        <a
+          href="https://shopee.co.id/nanjungabadi.official?categoryId=100014&entryPoint=ShopByPDP&itemId=24080736509"
+          target="_blank"
+          ><i class="fas fa-store"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@nanjungabadii.official?is_from_webapp=1&sender_device=pc target="
+          _blank
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a href="mailto:your-email@example.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://wa.me/6281234567890" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        © 2024 Nanjung Abadi. Built with pride and dedication.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

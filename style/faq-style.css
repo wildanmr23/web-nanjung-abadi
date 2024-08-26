@@ -1,0 +1,152 @@
+.navbar-custom {
+  background: transparent;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 42%;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #b08d24; /* Warna teks putih */
+  position: relative; /* Dibutuhkan untuk animasi underline */
+}
+.navbar-custom .navbar-brand {
+  font-size: 2.5rem; /* Ukuran font lebih besar */
+  font-weight: bold; /* Membuat teks lebih tebal */
+}
+.navbar-custom .nav-link:hover {
+  color: #ddd22d; /* Warna teks berubah saat hover (biru Bootstrap) */
+  text-decoration: none; /* Garis bawah saat hover */
+  font-weight: bold;
+}
+.navbar-custom .nav-link.active {
+  color: #ddd22d; /* Warna teks untuk link aktif */
+  font-weight: bold; /* Teks tebal untuk link aktif */
+}
+
+/* Transisi halus untuk efek hover */
+.navbar-custom .nav-link {
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Ketebalan underline */
+  background-color: #b08d24; /* Warna underline */
+  transition: width 0.3s ease; /* Transisi untuk animasi */
+}
+.navbar-custom .nav-link:hover::after {
+  width: 100%; /* Lebar underline penuh saat hover */
+}
+/* Menyesuaikan ikon toggler agar terlihat jelas di latar belakang gelap */
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.faq-section {
+  padding: 70px 0;
+}
+.faq-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.faq-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+.faq-header h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #b08d24;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}.faq-section {
+  padding: 30px 0; /* Reduced padding to move FAQ header up */
+}
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px; /* Reduced margin to bring header closer to the top */
+}
+.faq-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+.faq-header h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #b08d24;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.faq-item {
+  margin-bottom: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.faq-item .card-header {
+  background-color: #b08d24;
+  color: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.faq-item .card-header:hover {
+  background-color: #ddd22d;
+  color: #fff;
+}
+.faq-item .btn-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.faq-item .card-body {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border: 1px solid #b08d24;
+}
+.faq-item .card-body p {
+  margin-bottom: 0;
+}
+.footer {
+  background-color: rgba(176, 141, 36, 0.5);
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.footer .social-icons a {
+  margin: 0 15px;
+  color: #555;
+  font-size: 24px;
+  text-decoration: none;
+}
+.footer .social-icons a:hover {
+  color: white;
+}
+.footer .copyright {
+  margin-top: 15px;
+  font-size: 14px;
+}

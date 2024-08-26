@@ -1,0 +1,242 @@
+/* General Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+  background: transparent;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 42%;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #b08d24; /* Warna teks putih */
+  position: relative; /* Dibutuhkan untuk animasi underline */
+}
+.navbar-custom .navbar-brand {
+  font-size: 2.5rem; /* Ukuran font lebih besar */
+  font-weight: bold; /* Membuat teks lebih tebal */
+}
+.navbar-custom .nav-link:hover {
+  color: #ddd22d; /* Warna teks berubah saat hover (biru Bootstrap) */
+  text-decoration: none; /* Garis bawah saat hover */
+  font-weight: bold;
+}
+.navbar-custom .nav-link.active {
+  color: #ddd22d; /* Warna teks untuk link aktif */
+  font-weight: bold; /* Teks tebal untuk link aktif */
+}
+
+/* Transisi halus untuk efek hover */
+.navbar-custom .nav-link {
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Ketebalan underline */
+  background-color: #b08d24; /* Warna underline */
+  transition: width 0.3s ease; /* Transisi untuk animasi */
+}
+.navbar-custom .nav-link:hover::after {
+  width: 100%; /* Lebar underline penuh saat hover */
+}
+/* Menyesuaikan ikon toggler agar terlihat jelas di latar belakang gelap */
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+/* Home Section Styles */
+#home .header-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.card {
+  border: 1px solid #ddd; /* Border abu-abu terang */
+  border-radius: 10px; /* Sudut membulat pada kartu */
+  overflow: hidden; /* Menghindari elemen melampaui batas kartu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: transform 0.3s ease; /* Transisi saat hover */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Mengangkat kartu saat hover */
+}
+
+.card-img-top {
+  height: 50%; /* Tinggi gambar tetap */
+  object-fit: cover; /* Memastikan gambar menutupi area tanpa distortion */
+}
+
+.card-body {
+  text-align: center; /* Memusatkan teks */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Ukuran font judul produk */
+  margin-bottom: 0.5rem; /* Jarak bawah */
+}
+
+.card-text {
+  color: #888; /* Warna teks deskripsi produk */
+}
+
+/* Styling untuk ikon bintang */
+.rating {
+  color: #ffd700; /* Warna bintang */
+  font-size: 1.25rem; /* Ukuran bintang */
+}
+#featured-latest-products {
+  padding: 40px;
+  text-align: center;
+}
+
+#featured-latest-products .featured-product,
+#featured-latest-products .latest-product {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.center-item {
+  display: flex;
+  justify-content: center; /* Mengatur item untuk berada di pojok kanan */
+  margin-top: 15px; /* Jarak atas dari tombol jika diperlukan */
+}
+
+.animated-button {
+  background-color: #c22a22;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button-product {
+  background-color: #b08d24;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Testimonials Styles */
+.testimonials {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.testimonial {
+  max-width: 300px;
+  text-align: left;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.client-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* About, Relationship, Contact, FAQ Sections Styles */
+section {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: rgba(176, 141, 36, 0.5);
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .social-icons a {
+  margin: 0 15px;
+  color: #555;
+  font-size: 24px;
+  text-decoration: none;
+}
+.footer .social-icons a:hover {
+  color: white;
+}
+.footer .copyright {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Menyembunyikan elemen secara default */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Menampilkan elemen saat berada di viewport */
+.fade-in.show {
+  opacity: 1;
+}
+
+.animated-button-product:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}

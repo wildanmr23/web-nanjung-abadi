@@ -1,0 +1,185 @@
+.navbar-custom {
+  background: transparent;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 42%;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #b08d24; /* Warna teks putih */
+  position: relative; /* Dibutuhkan untuk animasi underline */
+}
+.navbar-custom .navbar-brand {
+  font-size: 2.5rem; /* Ukuran font lebih besar */
+  font-weight: bold; /* Membuat teks lebih tebal */
+}
+.navbar-custom .nav-link:hover {
+  color: #ddd22d; /* Warna teks berubah saat hover (biru Bootstrap) */
+  text-decoration: none; /* Garis bawah saat hover */
+  font-weight: bold;
+}
+.navbar-custom .nav-link.active {
+  color: #ddd22d; /* Warna teks untuk link aktif */
+  font-weight: bold; /* Teks tebal untuk link aktif */
+}
+
+/* Transisi halus untuk efek hover */
+.navbar-custom .nav-link {
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Ketebalan underline */
+  background-color: #b08d24; /* Warna underline */
+  transition: width 0.3s ease; /* Transisi untuk animasi */
+}
+.navbar-custom .nav-link:hover::after {
+  width: 100%; /* Lebar underline penuh saat hover */
+}
+/* Menyesuaikan ikon toggler agar terlihat jelas di latar belakang gelap */
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+.carousel-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel-item img {
+  height: 50vh; /* Menyesuaikan tinggi gambar */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 40vh; /* Menyesuaikan tinggi pada layar lebih kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 30vh;
+  }
+
+  .carousel-item {
+    display: block; /* Menampilkan satu item per slide */
+  }
+
+  .carousel-item .col-6 {
+    width: 100%; /* Mengatur kolom menjadi 100% lebar layar */
+    padding: 0.5rem; /* Memberikan sedikit padding antara gambar */
+  }
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+i.fab {
+  margin-right: 8px;
+}
+
+.animated-button-product {
+  background-color: #b08d24;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.animated-button-product:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.animated-button-shopee {
+  background-color: #ff5722;
+  border-color: #e64a19;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button-shopee:hover {
+  background-color: #e64a19;
+  border-color: #e64a19;
+}
+
+.animated-button-tiktok {
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button-tiktok:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+.footer {
+  background-color: rgba(176, 141, 36, 0.5);
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .social-icons a {
+  margin: 0 15px;
+  color: #555;
+  font-size: 24px;
+  text-decoration: none;
+}
+.footer .social-icons a:hover {
+  color: white;
+}
+.footer .copyright {
+  margin-top: 15px;
+  font-size: 14px;
+}
